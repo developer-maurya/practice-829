@@ -1,83 +1,93 @@
-// let arr = [ 1,2,3,4,5]
-// console.log(arr.length);
+ regular function
+function a (){
+    console.log("a");
+}
 
-// push
+arrow function
+const b = c => {
+    console.log("b",c);
+}
 
-// const arr1 = ["hello", "india"]
-// let res = arr1.push("& world")
-// console.log(arr1)
+function expression
+const d = function(){
+    console.log("d");
 
-// slice
-// let arr2 = ["hello", "india" ,"world"]
-// let res1 = arr1.slice(1, 2)
-// console.log(arr1)
-// console.log(res)
+}
 
-// toString
-// const arr3 = ["hello", "india"]
-// let res2 = arr3.toString()
-// console.log(res2);
+function chit (a,b){
+    console.log(a,b)
+}
+chit(50,60)
+chit()
+chit()
 
-// shift
+const fun = () => {
+    console.log("hiiii")
+}
 
-// const arr4 = ["hello", "india"]
-// let res3 = arr1.shift()
-// let res3 = arr1.unshift()
-// console.log(res3)
-// console.log(arr1)
+fun()
 
-// Map
-// const arr5 = [1,2,3,4,5]
-// let res4 = arr5.map((a)=> a + 2)
-// console.log(res4)
+function expression
+function showMessage(){
+    alert("Hello World!");
+}
+showMessage();
 
-// filter
-// const arr6 = ["hello","india","word", "hii"]
-// let res5 = arr6.filter(word => word.length >5)
-// console.log(res5);
+const a =["hii", "prebtybe"]
+  a.slice(1)
+console.log(a)
 
-// const arr7 = [1,2,3,4,5]
-// let res6 = arr5.find((a)=> a==2)
-// console.log(res6)
+let numbers = [1, 13, 22, 123,49];  
 
-// const arr8 = [1,2,3,4,5]
-// let res7 = arr8.findIndex((a)=> a==4)
-// console.log(res7)
+let sum = numbers.reduce((acc, num) => acc + num, 0);
 
-// const arr9 = [1,2,3,4,5]
-// let res8 = arr9.reverse()
-// console.log(res8)
-
-// const arr10 = [1,2,3,4,5]
-// let res9 = delete(arr[3])
-// console.log(arr10);
+console.log("The sum of the numbers is: " + sum)
 
 
-// let arr =[1,2,3,4,5,6]
-// let res2= arr.map((y) => y*3);
+let s="chitranjan"
+let vowel="aeiouAEIOU"
+let count= "";
+for(let i=0; i<s.length; i++){
+    if(vowel== s[i]){
+        // count+=s[i];
+        count++;
+    }
+    console.log(count);
+}
 
-// console.log(res2);
 
-// push
-// const arr1 = ["chitranjan","kumar" ,"maurya" , "singh"]
-// console.log(arr1)
-//  let res1 = arr1.filter( word => word.length > 3)
-// console.log(res1)
+let arr =[4,8,7,54,55,7,2,22,1,7]
+let even="";
+let odd="";
+for(let i of arr){
+    if (arr[i]%2===0){
+        even+=arr[i]
+        
+    }else{
+        odd+=arr[i]
+        
+    }
+    
+}
+console.log(even)
+console.log(odd)
 
-let arr4 =[1,2,3,4,5,6,7]
-let ches = arr4.find(x => x == 2)
-let ches1 = arr4.findIndex(x => x ==2)
-let ches2 = arr4.includes(5)
-let ches3 =arr4.reverse()
-let ches4 = arr4.slice(3,4,10)
-let ches5= arr4.unshift(9)
-console.log(ches1);
-console.log(ches);
-console.log(ches2);
-console.log(ches3);
-console.log(ches4);
-console.log(ches5)
-console.log(arr4);
+let arr1 =[0,1,0,1,0,1,1,1,0,0,0]
+let zero=0;
+let one=0;
+for(let i = 0; i<arr1.length; i++){
+    if(1===arr1){
+        one++
+
+    }else if(0===arr1){
+        zero++
+        
+    }
+    
+}
+console.log(one);
+console.log(zero)
+
 
 
 
